@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - AuntSite</title>
+
+    
+        <link rel="stylesheet" href="contact/bootstrap.css">
+        <link rel="stylesheet" href="contact/textAngular.css">
+        <link rel="stylesheet" href="contact/font-awesome.css">
+        <link rel="stylesheet" href="contact/site.css">
+    
+    
+    <script src="contact/jquery-2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var docHeight = $(window).height();
+            var footerHeight = $('#footer').height();
+            var footerTop = $('#footer').position().top + footerHeight;
+
+            if (footerTop < docHeight) {
+                $('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+            }
+        });
+    </script>
+    <script>
+        function clickLogo() {
+            document.getElementById("homePage").click();
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand" onclick="clickLogo()">
+                    <img src="contact/logo.png" class="img-responsive" width="300" height="100">
+                </div>
+                <div class="navbarTabs">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse pull-right navbarTabs">
+                <ul class="dropdown nav navbar-nav">
+                    <li>
+                        <a id="homePage" href="index.html">Strona główna</a>
+                    </li>
+                    <li>
+                        <a href="about.html">O nas</a>
+                    </li>
+                    <li>
+                        <a href="mission.html">Nasza misja</a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">Godziny przyjęć</a>
+                    </li>
+                    <li>
+                        <a href="offer.html">Oferta i cennik</a>
+                    </li>
+                    <li class="active-page">
+                        <a href="contact.html" class="active-page">Kontakt</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div id="main" class="container body-content">
+            
+<script>
+    function editClick() {
+        var toHide = document.querySelectorAll("[name^=editHide");
+        for (x = 0; x < toHide.length; x++) {
+            toHide[x].hidden = "hidden";
+        }
+        var toShow = document.querySelectorAll("[name^=editShow");
+        for (x = 0; x < toShow.length; x++) {
+            toShow[x].hidden = "";
+        }
+    };
+    function setRowReadonlyAttr(index) {
+        var row = document.querySelectorAll("[name^='model.RegistrationHours[" + String(index) + "].S']");
+        for (x = 0; x < row.length; x++) {
+            if (row[x].hasAttribute("readonly")) {
+                row[x].removeAttribute("readonly")
+            } else {
+                row[x].setAttribute("readonly", "readonly")
+            }
+        }
+        row = document.querySelectorAll("[name^='model.RegistrationHours[" + String(index) + "].E']");
+        for (x = 0; x < row.length; x++) {
+            if (row[x].hasAttribute("readonly")) {
+                row[x].removeAttribute("readonly")
+            } else {
+                row[x].setAttribute("readonly", "readonly")
+            }
+        }
+    };
+</script>
+
+    <div class="text-center row body-header">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="row">
+                <h3 class="body-header-h3">KONTAKT</h3>
+                <hr class="body-header-line">
+            </div>
+        </div>
+    </div>
+    <div ng-app="TextAngular" ng-controller="RichTextController" class="ng-scope">
+        <div name="editHide" class="row">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="col-md-1">
+                        <img src="contact/lokalizacja.png" width="25">
+                    </div>
+                    <div class="col-md-9">
+                        <text class="text-nowrap">
+                            41-710 Ruda Śląska<br>
+                            ul. 1 Maja 288<br>
+                        </text>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="contact/telefon2.png" width="25">
+                        </div>
+                        <div class="col-md-10">
+                            <strong>
+                                <abbr title="Phone">Tel:</abbr>
+                                000 000 000<br>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="row onlyText ng-pristine ng-untouched ng-valid ng-isolate-scope ta-root disabled ng-not-empty" text-angular="" ng-model="ImportantInfoReadonlyText" ng-init="ImportantInfoReadonlyText='W przypadkach nagłych termin przyjęcia należy uzgodnić wyłącznie z lekarzem prowadzącym Poradnię. W celu ustalenia terminu pierwszej wizyty w ramach umowy z NFZ należy zgłosić się osobiście do Poradni w w/w godzinach ze skierowaniem i kartą chip .'" ta-disabled="true" ta-toolbar="''" ta-toolbar-class="onlyText" ta-text-editor-class="onlyText" ta-html-editor-class="onlyText" ta-editor-class="onlyText"><div text-angular-toolbar="" name="textAngularToolbar9461155217690652" ta-toolbar="''" ta-toolbar-class="onlyText" class="ng-scope ng-isolate-scope ta-toolbar onlyText"></div><div class="ta-scroll-window ng-scope ta-text ta-editor onlyText" ng-hide="showHtml"><div class="popover fade bottom" style="max-width: none; width: 305px;"><div class="arrow"></div><div class="popover-content"></div></div><div class="ta-resizer-handle-overlay"><div class="ta-resizer-handle-background"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tr"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-bl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-br"></div><div class="ta-resizer-handle-info"></div></div><div id="taTextElement9461155217690652" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ta-bind ta-readonly ng-not-empty"><p>W
+ przypadkach nagłych termin przyjęcia należy uzgodnić wyłącznie z 
+lekarzem prowadzącym Poradnię. W celu ustalenia terminu pierwszej wizyty
+ w ramach umowy z NFZ należy zgłosić się osobiście do Poradni w w/w 
+godzinach ze skierowaniem i kartą chip .</p></div></div><textarea id="taHtmlElement9461155217690652" ng-show="showHtml" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ng-scope ta-bind ta-readonly ta-html ta-editor onlyText ng-not-empty ng-hide" disabled="disabled">&lt;p&gt;W
+ przypadkach nagłych termin przyjęcia należy uzgodnić wyłącznie z 
+lekarzem prowadzącym Poradnię. W celu ustalenia terminu pierwszej wizyty
+ w ramach umowy z NFZ należy zgłosić się osobiście do Poradni w w/w 
+godzinach ze skierowaniem i kartą chip .&lt;/p&gt;</textarea><input type="hidden" tabindex="-1" style="display: none;" name="textAngularEditor9461155217690652" value="W przypadkach nagłych termin przyjęcia należy uzgodnić wyłącznie z lekarzem prowadzącym Poradnię. W celu ustalenia terminu pierwszej wizyty w ramach umowy z NFZ należy zgłosić się osobiście do Poradni w w/w godzinach ze skierowaniem i kartą chip ."></div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="col-md-2">
+                        <img src="contact/telefon2.png" width="25">
+                    </div>
+                    <div class="col-md-10">
+                        <strong>Rejestracja telefoniczna pacjentów:</strong>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        Poniedziałek: 14:00 - 20:00
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        Wtorek: 8:00 - 14:00
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        Środa: 14:00 - 20:00
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        Czwartek: 14:00 - 20:00
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        Piątek: 8:00 - 14:00
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-10">
+                    <a href="https://www.google.pl/maps/place/1+Maja+288,+41-710+Ruda+%C5%9Al%C4%85ska/@50.2731873,18.8617602,17z/data=!3m1!4b1!4m5!3m4!1s0x4716cd2e13988461:0x57dc8998ca2af2f9!8m2!3d50.2731839!4d18.8639489">
+                        <img class="img-responsive" src="contact/lokalizacjagoogle.png" width="150">
+                    </a>
+                </div>
+            </div>
+            <div class="row img-rounded">
+                <img class="img-responsive" src="contact/mapka.png">
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+        <div id="footer">
+            <div class="container">
+                <div class="row footer-text">
+                    <div class="col-md-8 pull-down" style="margin-top: 15px;">
+                        <div class="col-md-12">
+                            © Poradnia Alergologiczna dla Dzieci i Dorosłych
+                            <br>
+                            <!-- TODO: move to db-->
+                            Administratorem danych jest NZOZ Almed-Elektra. Danke, c.O<br>
+                            All rights Reserved. <br>
+                            pics from pixabay.com
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="row col-md-offset-1" style="margin-bottom: 10px;">
+                            <strong><b>Adres:</b></strong>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="contact/lokalizacja_002.png" width="20">
+                            </div>
+                            <div class="col-md-10">
+                                41-710 Ruda Śląska ul. 1 Maja 288
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="contact/telefon.png" width="20">
+                            </div>
+                            <div class="col-md-10">
+                                000 000 000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="contact/jquery.js"></script>
+        <script src="contact/bootstrap.js"></script>
+        <script src="contact/angular.js"></script>
+        <script src="contact/textAngular-sanitize.js"></script>
+        <script src="contact/textAngular-rangy.js"></script>
+        <script src="contact/textAngular.js"></script>
+        <script src="contact/js"></script>
+        <script src="contact/ng-map.js"></script>
+        <script src="contact/site.js"></script>
+    
+    
+
+    
+
+
+</body></html>

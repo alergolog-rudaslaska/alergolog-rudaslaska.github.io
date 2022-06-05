@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasza misja - AuntSite</title>
+
+    
+        <link rel="stylesheet" href="mission/bootstrap.css">
+        <link rel="stylesheet" href="mission/textAngular.css">
+        <link rel="stylesheet" href="mission/font-awesome.css">
+        <link rel="stylesheet" href="mission/site.css">
+    
+    
+    <script src="mission/jquery-2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var docHeight = $(window).height();
+            var footerHeight = $('#footer').height();
+            var footerTop = $('#footer').position().top + footerHeight;
+
+            if (footerTop < docHeight) {
+                $('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+            }
+        });
+    </script>
+    <script>
+        function clickLogo() {
+            document.getElementById("homePage").click();
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand" onclick="clickLogo()">
+                    <img src="mission/logo.png" class="img-responsive" width="300" height="100">
+                </div>
+                <div class="navbarTabs">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse pull-right navbarTabs">
+                <ul class="dropdown nav navbar-nav">
+                    <li>
+                        <a id="homePage" href="index.html">Strona główna</a>
+                    </li>
+                    <li>
+                        <a href="about.html">O nas</a>
+                    </li>
+                    <li class="active-page">
+                        <a href="mission.html" class="active-page">Nasza misja</a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">Godziny przyjęć</a>
+                    </li>
+                    <li>
+                        <a href="offer.html">Oferta i cennik</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+              
+
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div id="main" class="container body-content">
+            
+<script>
+    function editClick() {
+        var toHide = document.querySelectorAll("[name^=editHide");
+        for (x = 0; x < toHide.length; x++) {
+            toHide[x].hidden = "hidden";
+        }
+        var toShow = document.querySelectorAll("[name^=editShow");
+        for (x = 0; x < toShow.length; x++) {
+            toShow[x].hidden = "";
+        }
+    };
+</script>
+
+    <div class="text-center row body-header">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="row">
+                <h3 class="body-header-h3">NASZA MISJA</h3>
+                <hr class="body-header-line">
+            </div>
+            <div class="row">
+                <img src="mission/pacjent.png" width="50">
+            </div>
+        </div>
+    </div>
+    <div ng-app="TextAngular" ng-controller="RichTextController" class="ng-scope">
+        <div name="editHide">
+            <div class="onlyText ng-pristine ng-untouched ng-valid ng-isolate-scope ta-root disabled ng-not-empty" text-angular="" ng-model="'&lt;div class=&quot;text-center&quot;&gt;Diagnostyka, terapia i profilaktyka chorób alergicznych u dzieci i dorosłych, szkolenia dla pacjentów.&lt;br/&gt;&lt;/div&gt;&lt;h3 style=&quot;text-align: center;&quot;&gt;&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Do Poradni powinny zgłosić się osoby z następującymi dolegliwościami :&nbsp;&lt;/h3&gt;&lt;div class=&quot;text-center&quot;&gt;&lt;strong&gt;&nbsp;&nbsp;&lt;/strong&gt;&lt;br/&gt;&nbsp;&nbsp;&nbsp;&lt;text class=&quot;text-center&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/text&gt;&lt;/div&gt;&lt;p&gt;&lt;text class=&quot;text-center&quot;&gt;&lt;div class=&quot;text-center&quot;&gt;&lt;ul class=&quot;list-unstyled&quot;&gt;            &lt;li&gt;świąd skóry , nawracające lub przewlekłe wysypki &lt;/li&gt;            &lt;li&gt;częste kichanie , łzawienie i świąd oczu &lt;/li&gt;            &lt;li&gt;kaszel trwający dłużej niż 6 tygodni , nocne napady kaszlu &lt;/li&gt;            &lt;li&gt;oddychanie ze świstem lub trudności w nabraniu/wydychaniu powietrza z płuc &lt;/li&gt;            &lt;li&gt;wyciek i/lub zatkanie nosa napadowe lub trwające dłużej niż 3 tyg. , lub nawracające &lt;/li&gt;            &lt;li&gt;nawracające obrzęki skóry w różnych okolicach lub całego ciała &lt;/li&gt;            &lt;li&gt;nawracające biegunki , wzdęcia , kolki brzuszne , wymioty i ulewania .&lt;/li&gt;        &lt;/ul&gt;&lt;/div&gt;    &lt;/text&gt;&lt;/p&gt;'" ta-disabled="true" ta-toolbar="''" ta-toolbar-class="onlyText" ta-text-editor-class="onlyText" ta-html-editor-class="onlyText" ta-editor-class="onlyText"><div text-angular-toolbar="" name="textAngularToolbar3393081715769922" ta-toolbar="''" ta-toolbar-class="onlyText" class="ng-scope ng-isolate-scope ta-toolbar onlyText"></div><div class="ta-scroll-window ng-scope ta-text ta-editor onlyText" ng-hide="showHtml"><div class="popover fade bottom" style="max-width: none; width: 305px;"><div class="arrow"></div><div class="popover-content"></div></div><div class="ta-resizer-handle-overlay"><div class="ta-resizer-handle-background"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tr"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-bl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-br"></div><div class="ta-resizer-handle-info"></div></div><div id="taTextElement3393081715769922" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ta-bind ta-readonly ng-not-empty"><div class="text-center">Diagnostyka, terapia i profilaktyka chorób alergicznych u dzieci i dorosłych, szkolenia dla pacjentów.<br></div><h3 style="text-align: center;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Do Poradni powinny zgłosić się osoby z następującymi dolegliwościami :&nbsp;</h3><div class="text-center"><strong>&nbsp;&nbsp;</strong><br>&nbsp;&nbsp;&nbsp;<text class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </text></div><p><text class="text-center"></text></p><div class="text-center"><ul class="list-unstyled">            <li>świąd skóry , nawracające lub przewlekłe wysypki </li>            <li>częste kichanie , łzawienie i świąd oczu </li>            <li>kaszel trwający dłużej niż 6 tygodni , nocne napady kaszlu </li>            <li>oddychanie ze świstem lub trudności w nabraniu/wydychaniu powietrza z płuc </li>            <li>wyciek i/lub zatkanie nosa napadowe lub trwające dłużej niż 3 tyg. , lub nawracające </li>            <li>nawracające obrzęki skóry w różnych okolicach lub całego ciała </li>            <li>nawracające biegunki , wzdęcia , kolki brzuszne , wymioty i ulewania .</li>        </ul></div>    <p></p></div></div><textarea id="taHtmlElement3393081715769922" ng-show="showHtml" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ng-scope ta-bind ta-readonly ta-html ta-editor onlyText ng-not-empty ng-hide" disabled="disabled">&lt;div
+ class="text-center"&gt;Diagnostyka, terapia i profilaktyka chorób 
+alergicznych u dzieci i dorosłych, szkolenia dla 
+pacjentów.&lt;br&gt;&lt;/div&gt;
+&lt;h3 style="text-align: 
+center;"&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ Do Poradni powinny zgłosić się osoby z następującymi dolegliwościami 
+:&amp;nbsp;&lt;/h3&gt;
+&lt;div 
+class="text-center"&gt;&lt;strong&gt;&amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;text
+ 
+class="text-center"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ &lt;/text&gt;&lt;/div&gt;
+&lt;p&gt;&lt;text class="text-center"&gt;&lt;/text&gt;&lt;/p&gt;
+&lt;div class="text-center"&gt;&lt;ul class="list-unstyled"&gt;         
+   &lt;li&gt;świąd skóry , nawracające lub przewlekłe wysypki 
+&lt;/li&gt;            &lt;li&gt;częste kichanie , łzawienie i świąd 
+oczu &lt;/li&gt;            &lt;li&gt;kaszel trwający dłużej niż 6 
+tygodni , nocne napady kaszlu &lt;/li&gt;            
+&lt;li&gt;oddychanie ze świstem lub trudności w nabraniu/wydychaniu 
+powietrza z płuc &lt;/li&gt;            &lt;li&gt;wyciek i/lub zatkanie 
+nosa napadowe lub trwające dłużej niż 3 tyg. , lub nawracające 
+&lt;/li&gt;            &lt;li&gt;nawracające obrzęki skóry w różnych 
+okolicach lub całego ciała &lt;/li&gt;            &lt;li&gt;nawracające 
+biegunki , wzdęcia , kolki brzuszne , wymioty i ulewania .&lt;/li&gt;   
+     &lt;/ul&gt;&lt;/div&gt;    
+&lt;p&gt;&lt;/p&gt;</textarea><input type="hidden" tabindex="-1" style="display: none;" name="textAngularEditor3393081715769922" value="&lt;div class=&quot;text-center&quot;&gt;Diagnostyka, terapia i profilaktyka chorób alergicznych u dzieci i dorosłych, szkolenia dla pacjentów.&lt;br/&gt;&lt;/div&gt;&lt;h3 style=&quot;text-align: center;&quot;&gt;&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Do Poradni powinny zgłosić się osoby z następującymi dolegliwościami :&nbsp;&lt;/h3&gt;&lt;div class=&quot;text-center&quot;&gt;&lt;strong&gt;&nbsp;&nbsp;&lt;/strong&gt;&lt;br/&gt;&nbsp;&nbsp;&nbsp;&lt;text class=&quot;text-center&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/text&gt;&lt;/div&gt;&lt;p&gt;&lt;text class=&quot;text-center&quot;&gt;&lt;div class=&quot;text-center&quot;&gt;&lt;ul class=&quot;list-unstyled&quot;&gt;            &lt;li&gt;świąd skóry , nawracające lub przewlekłe wysypki &lt;/li&gt;            &lt;li&gt;częste kichanie , łzawienie i świąd oczu &lt;/li&gt;            &lt;li&gt;kaszel trwający dłużej niż 6 tygodni , nocne napady kaszlu &lt;/li&gt;            &lt;li&gt;oddychanie ze świstem lub trudności w nabraniu/wydychaniu powietrza z płuc &lt;/li&gt;            &lt;li&gt;wyciek i/lub zatkanie nosa napadowe lub trwające dłużej niż 3 tyg. , lub nawracające &lt;/li&gt;            &lt;li&gt;nawracające obrzęki skóry w różnych okolicach lub całego ciała &lt;/li&gt;            &lt;li&gt;nawracające biegunki , wzdęcia , kolki brzuszne , wymioty i ulewania .&lt;/li&gt;        &lt;/ul&gt;&lt;/div&gt;    &lt;/text&gt;&lt;/p&gt;"></div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+        <div id="footer">
+            <div class="container">
+                <div class="row footer-text">
+                    <div class="col-md-8 pull-down" style="margin-top: 15px;">
+                        <div class="col-md-12">
+                            © Poradnia Alergologiczna dla Dzieci i Dorosłych
+                            <br>
+                            <!-- TODO: move to db-->
+                            Administratorem danych jest NZOZ Almed-Elektra. Danke, c.O<br>
+                            All rights Reserved. <br>
+                            pics from pixabay.com
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="row col-md-offset-1" style="margin-bottom: 10px;">
+                            <strong><b>Adres:</b></strong>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="mission/lokalizacja.png" width="20">
+                            </div>
+                            <div class="col-md-10">
+                                41-710 Ruda Śląska ul. 1 Maja 288
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="mission/telefon.png" width="20">
+                            </div>
+                            <div class="col-md-10">
+                                000 000 000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="mission/jquery.js"></script>
+        <script src="mission/bootstrap.js"></script>
+        <script src="mission/angular.js"></script>
+        <script src="mission/textAngular-sanitize.js"></script>
+        <script src="mission/textAngular-rangy.js"></script>
+        <script src="mission/textAngular.js"></script>
+        <script src="mission/js"></script>
+        <script src="mission/ng-map.js"></script>
+        <script src="mission/site.js"></script>
+    
+    
+
+    
+
+
+</body></html>

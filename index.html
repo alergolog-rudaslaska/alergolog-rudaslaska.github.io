@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - AuntSite</title>
+
+    
+        <link rel="stylesheet" href="home/bootstrap.css">
+        <link rel="stylesheet" href="home/textAngular.css">
+        <link rel="stylesheet" href="home/font-awesome.css">
+        <link rel="stylesheet" href="home/site.css">
+    
+    
+    <script type="text/javascript" async="" src="home/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-RSlCpFqWRFHFRGuPFlHagJ02UJBvTh25AeGbpxOIDNxz6EC0NX+HrI6yhNnsgvWJ"></script><script src="home/jquery-2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var docHeight = $(window).height();
+            var footerHeight = $('#footer').height();
+            var footerTop = $('#footer').position().top + footerHeight;
+
+            if (footerTop < docHeight) {
+                $('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+            }
+        });
+    </script>
+    <script>
+        function clickLogo() {
+            document.getElementById("homePage").click();
+        }
+    </script>
+<script type="text/javascript" charset="UTF-8" src="home/common.js"></script><script type="text/javascript" charset="UTF-8" src="home/util.js"></script></head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand" onclick="clickLogo()">
+                    <img src="home/logo.png" class="img-responsive" width="300" height="100">
+                </div>
+                <div class="navbarTabs">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse pull-right navbarTabs">
+                <ul class="dropdown nav navbar-nav">
+                    <li class="active-page">
+                        <a id="homePage" href="index.html" class="active-page">Strona główna</a>
+                    </li>
+                    <li>
+                        <a href="about.html">O nas</a>
+                    </li>
+                    <li>
+                        <a href="mission.html">Nasza misja</a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">Godziny przyjęć</a>
+                    </li>
+                    <li>
+                        <a href="offer.html">Oferta i cennik</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div id="main" class="container body-content">
+            
+<script>
+    function editClick() {
+        var toHide = document.querySelectorAll("[name^=editHide");
+        for (x = 0; x < toHide.length; x++) {
+            toHide[x].hidden = "hidden";
+        }
+        var toShow = document.querySelectorAll("[name^=editShow");
+        for (x = 0; x < toShow.length; x++) {
+            toShow[x].hidden = "";
+        }
+    };
+</script>
+
+
+    <div class="col-md-12">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="5" class="active"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item item">
+                    <img src="home/00.jpg" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item item">
+                    <img src="home/01.jpg" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item item">
+                    <img src="home/02.jpg" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item item">
+                    <img src="home/03.jpg" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item item active left">
+                    <img src="home/04.jpg" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item item next left">
+                    <img src="home/05.jpg" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div ng-app="TextAngular" ng-controller="RichTextController" class="ng-scope">
+            <div name="editHide" class="row">
+                <div class="col-md-6">
+                    <h2>Nazwa</h2>
+                    <p>Poradnia Alergologiczna dla Dzieci i Dorosłych</p>
+                    <p>41-710 Ruda Śląska, ul. 1 Maja 288</p>
+                    <p>
+                        </p><div class="onlyText ng-pristine ng-untouched ng-valid ng-isolate-scope ta-root disabled ng-not-empty" text-angular="" ng-model="'Poradnia Alergologiczna dla Dzieci i Dorosłych 
+41 - 710 Ruda Śląska, 
+ul. 1 Maja 288 
+(w budynku Ośrodka Pielęgniarstwa „Pomoc w zdrowiu i chorobie”, naprzeciwko kościoła ewangelickiego) Parking dla pacjentów Poradni na tyłach budynku od strony ul. ...W pobliżu przystanki autobusowe linii 7, 23(kierunek Ruda Śl.- Halemba / Katowice, kierunek Ruda Śl.Południowa / Zabrze), postój taksówek przy ul. ...'" ta-disabled="true" ta-toolbar="''" ta-toolbar-class="onlyText" ta-text-editor-class="onlyText" ta-html-editor-class="onlyText" ta-editor-class="onlyText"><div text-angular-toolbar="" name="textAngularToolbar9635169148391224" ta-toolbar="''" ta-toolbar-class="onlyText" class="ng-scope ng-isolate-scope ta-toolbar onlyText"></div><div class="ta-scroll-window ng-scope ta-text ta-editor onlyText" ng-hide="showHtml"><div class="popover fade bottom" style="max-width: none; width: 305px;"><div class="arrow"></div><div class="popover-content"></div></div><div class="ta-resizer-handle-overlay"><div class="ta-resizer-handle-background"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tr"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-bl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-br"></div><div class="ta-resizer-handle-info"></div></div><div id="taTextElement9635169148391224" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ta-bind ta-readonly ng-not-empty"><p>Poradnia
+ Alergologiczna dla Dzieci i Dorosłych 41 - 710 Ruda Śląska, ul. 1 Maja 
+288 (w budynku Ośrodka Pielęgniarstwa „Pomoc w zdrowiu i chorobie”, 
+naprzeciwko kościoła ewangelickiego) Parking dla pacjentów Poradni na 
+tyłach budynku od strony ul. ...W pobliżu przystanki autobusowe linii 7,
+ 23(kierunek Ruda Śl.- Halemba / Katowice, kierunek Ruda Śl.Południowa /
+ Zabrze), postój taksówek przy ul. ...</p></div></div><textarea id="taHtmlElement9635169148391224" ng-show="showHtml" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ng-scope ta-bind ta-readonly ta-html ta-editor onlyText ng-not-empty ng-hide" disabled="disabled">&lt;p&gt;Poradnia
+ Alergologiczna dla Dzieci i Dorosłych 41 - 710 Ruda Śląska, ul. 1 Maja 
+288 (w budynku Ośrodka Pielęgniarstwa „Pomoc w zdrowiu i chorobie”, 
+naprzeciwko kościoła ewangelickiego) Parking dla pacjentów Poradni na 
+tyłach budynku od strony ul. ...W pobliżu przystanki autobusowe linii 7,
+ 23(kierunek Ruda Śl.- Halemba / Katowice, kierunek Ruda Śl.Południowa /
+ Zabrze), postój taksówek przy ul. ...&lt;/p&gt;</textarea><input type="hidden" tabindex="-1" style="display: none;" name="textAngularEditor9635169148391224" value="Poradnia Alergologiczna dla Dzieci i Dorosłych 
+41 - 710 Ruda Śląska, 
+ul. 1 Maja 288 
+(w budynku Ośrodka Pielęgniarstwa „Pomoc w zdrowiu i chorobie”, naprzeciwko kościoła ewangelickiego) Parking dla pacjentów Poradni na tyłach budynku od strony ul. ...W pobliżu przystanki autobusowe linii 7, 23(kierunek Ruda Śl.- Halemba / Katowice, kierunek Ruda Śl.Południowa / Zabrze), postój taksówek przy ul. ..."></div>
+                    <p></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <h2>Najbliższa apteka </h2>
+                        <p>
+                            </p><div class="onlyText ng-pristine ng-untouched ng-valid ng-isolate-scope ta-root disabled ng-not-empty" text-angular="" ng-model="'&lt;p&gt;Najbliższe apteki znajdują się przy ulicy:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Dąbrowskiego 23&lt;/li&gt;&lt;li&gt;Kubiny 8&lt;br/&gt;&lt;/li&gt;&lt;/ul&gt;'" ta-disabled="true" ta-toolbar="''" ta-toolbar-class="onlyText" ta-text-editor-class="onlyText" ta-html-editor-class="onlyText" ta-editor-class="onlyText"><div text-angular-toolbar="" name="textAngularToolbar9029631368584764" ta-toolbar="''" ta-toolbar-class="onlyText" class="ng-scope ng-isolate-scope ta-toolbar onlyText"></div><div class="ta-scroll-window ng-scope ta-text ta-editor onlyText" ng-hide="showHtml"><div class="popover fade bottom" style="max-width: none; width: 305px;"><div class="arrow"></div><div class="popover-content"></div></div><div class="ta-resizer-handle-overlay"><div class="ta-resizer-handle-background"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tr"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-bl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-br"></div><div class="ta-resizer-handle-info"></div></div><div id="taTextElement9029631368584764" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ta-bind ta-readonly ng-not-empty"><p>Najbliższe apteki znajdują się przy ulicy:</p><ul><li>Dąbrowskiego 23</li><li>Kubiny 8<br></li></ul></div></div><textarea id="taHtmlElement9029631368584764" ng-show="showHtml" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ng-scope ta-bind ta-readonly ta-html ta-editor onlyText ng-not-empty ng-hide" disabled="disabled">&lt;p&gt;Najbliższe apteki znajdują się przy ulicy:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Dąbrowskiego 23&lt;/li&gt;
+	&lt;li&gt;Kubiny 8&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;</textarea><input type="hidden" tabindex="-1" style="display: none;" name="textAngularEditor9029631368584764" value="&lt;p&gt;Najbliższe apteki znajdują się przy ulicy:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Dąbrowskiego 23&lt;/li&gt;&lt;li&gt;Kubiny 8&lt;br/&gt;&lt;/li&gt;&lt;/ul&gt;"></div>
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <h2>Najbliższy szpital  </h2>
+                        <p>
+                            </p><div class="onlyText ng-pristine ng-untouched ng-valid ng-isolate-scope ta-root disabled ng-not-empty" text-angular="" ng-model="'&lt;p&gt;Najbliższy szpital miejski znajduje się przy ulicy Głównej 11.&lt;br/&gt;&lt;/p&gt;'" ta-disabled="true" ta-toolbar="''" ta-toolbar-class="onlyText" ta-text-editor-class="onlyText" ta-html-editor-class="onlyText" ta-editor-class="onlyText"><div text-angular-toolbar="" name="textAngularToolbar2328312449632878" ta-toolbar="''" ta-toolbar-class="onlyText" class="ng-scope ng-isolate-scope ta-toolbar onlyText"></div><div class="ta-scroll-window ng-scope ta-text ta-editor onlyText" ng-hide="showHtml"><div class="popover fade bottom" style="max-width: none; width: 305px;"><div class="arrow"></div><div class="popover-content"></div></div><div class="ta-resizer-handle-overlay"><div class="ta-resizer-handle-background"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-tr"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-bl"></div><div class="ta-resizer-handle-corner ta-resizer-handle-corner-br"></div><div class="ta-resizer-handle-info"></div></div><div id="taTextElement2328312449632878" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ta-bind ta-readonly ng-not-empty"><p>Najbliższy szpital miejski znajduje się przy ulicy Głównej 11.<br></p></div></div><textarea id="taHtmlElement2328312449632878" ng-show="showHtml" ta-bind="ta-bind" ng-model="html" ta-readonly="disabled" class="ng-pristine ng-untouched ng-valid ng-scope ta-bind ta-readonly ta-html ta-editor onlyText ng-not-empty ng-hide" disabled="disabled">&lt;p&gt;Najbliższy szpital miejski znajduje się przy ulicy Głównej 11.&lt;br&gt;&lt;/p&gt;</textarea><input type="hidden" tabindex="-1" style="display: none;" name="textAngularEditor2328312449632878" value="&lt;p&gt;Najbliższy szpital miejski znajduje się przy ulicy Głównej 11.&lt;br/&gt;&lt;/p&gt;"></div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    var recaptchaCallback = function (resp) {
+        var rechaptchaInput = document.getElementById("recaptcha");
+        if (resp) {
+            rechaptchaInput.value = resp;
+        } else {
+            rechaptchaInput.value = "";
+        }
+    };
+</script>
+<script src="home/api.js" async="" defer="defer"></script>
+
+        </div>
+    </div>
+        <div id="footer">
+            <div class="container">
+                <div class="row footer-text">
+                    <div class="col-md-8 pull-down" style="margin-top: 15px;">
+                        <div class="col-md-12">
+                            © Poradnia Alergologiczna dla Dzieci i Dorosłych
+                            <br>
+                            <!-- TODO: move to db-->
+                            Administratorem danych jest NZOZ Almed-Elektra. Danke, c.O<br>
+                            All rights Reserved. <br>
+                            pics from pixabay.com
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="row col-md-offset-1" style="margin-bottom: 10px;">
+                            <strong><b>Adres:</b></strong>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="home/lokalizacja.png" width="20">
+                            </div>
+                            <div class="col-md-10">
+                                41-710 Ruda Śląska ul. 1 Maja 288
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="home/telefon.png" width="20">
+                            </div>
+                            <div class="col-md-10">
+                                000 000 000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="home/jquery.js"></script>
+        <script src="home/bootstrap.js"></script>
+        <script src="home/angular.js"></script>
+        <script src="home/textAngular-sanitize.js"></script>
+        <script src="home/textAngular-rangy.js"></script>
+        <script src="home/textAngular.js"></script>
+        <script src="home/js"></script>
+        <script src="home/ng-map.js"></script>
+        <script src="home/site.js"></script>
+    
+    
+
+    
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="Test reCAPTCHA wygaśnie za 2&nbsp;minuty" src="home/bframe.html" style="width: 100%; height: 100%;" name="c-1xjixbjqg507" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0"></iframe></div></div></body></html>
